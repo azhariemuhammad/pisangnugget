@@ -22,6 +22,7 @@ module.exports = {
                 test: /\.(ts|tsx)$/,
                 loader: 'ts-loader'
             },
+            {test: /\.(jpe?g|png|gif|svg)$/i, loader: "url-loader?name=app/assets/[name].[ext]"},
             { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
         ]
     },
